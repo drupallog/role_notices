@@ -1,0 +1,4 @@
+services:
+  role_notices.notices_manager:
+    class: Drupal\role_notices\NoticesManger
+    arguments: ['@current_user', '@state']

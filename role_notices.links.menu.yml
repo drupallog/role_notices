@@ -1,0 +1,5 @@
+role_notices.hello:
+  title: 'Role Notices - Hello World'
+  description: 'A Hello World page'
+  route_name: role_notices.hello
+  parent: system.admin_reports

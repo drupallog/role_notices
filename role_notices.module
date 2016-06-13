@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains role_notices.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function role_notices_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the role_notices module.
+    case 'help.page.role_notices':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Display notices per role.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
