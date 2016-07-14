@@ -1,5 +1,5 @@
-role_notices.hello:
+role_notices.page:
   title: 'Role Notices - Hello World'
   description: 'A Hello World page'
-  route_name: role_notices.hello
-  parent: system.admin_reports
+  route_name: role_notices.page
+  parent: system.admin_people

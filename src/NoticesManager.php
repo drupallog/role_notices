@@ -1,12 +1,13 @@
 <?php
 namespace Drupal\role_notices;
-use Drupal\Core\
+use Drupal\Core\Session;
+use Drupal\Core\Form;
 
 class NoticesManger {
   protected $state;
   protected $user;
 
-}
+
 public function __construct(AccountInterface $user, StateInterface $state) {
   $this->user = $user;
   $this->state = $state;
@@ -32,5 +33,5 @@ public function setAllNotices(array $notices) {
     Cache::invalidateTags($this->getRenderTags($updated_keys));
   }
 }
+}
 
-?>

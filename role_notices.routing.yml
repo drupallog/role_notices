@@ -16,10 +16,10 @@ role_notices.setting_form:
   requirements:
     _permission: 'administer role notices'
 
-  role_notices.page:
-    path: '/admin/reports/role_notices'
-    defaults:
-      _controller: '\Drupal\role_notices\Controller\RoleNoticesController::page'
-      _title: 'Test Title'
-    requirements:
-      _permission: 'administer role notices'
+role_notices.page:
+  path: '/admin/reports/role_notices'
+  defaults:
+    _controller: '\Drupal\role_notices\Controller\RoleNoticesController::page'
+    _title: 'Test Title'
+  requirements:
+    _permission: 'administer role notices'
